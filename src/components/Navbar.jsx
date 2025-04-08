@@ -44,8 +44,7 @@ const Navbar = () => {
                     <li key={subIndex}>
                       <NavLink
                         to={subLink.to}
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                      >
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-200">
                         {subLink.label}
                       </NavLink>
                     </li>
@@ -58,8 +57,7 @@ const Navbar = () => {
                   to={link.to}
                   className={({ isActive }) =>
                     `px-4 py-2 ${isActive ? "text-blue-600 font-bold" : "text-gray-700"}`
-                  }
-                >
+                  }>
                   {link.label}
                 </NavLink>
               </li>
@@ -76,8 +74,7 @@ const Navbar = () => {
                   <li key={index}>
                     <button
                       onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
-                      className="w-full flex justify-between text-gray-700 py-2"
-                    >
+                      className="w-full flex justify-between text-gray-700 py-2">
                       {link.label} <HiChevronDown />
                     </button>
                     {isSubMenuOpen && (
@@ -99,8 +96,7 @@ const Navbar = () => {
                   <li key={index}>
                     <NavLink
                       to={link.to}
-                      className="block py-2 text-gray-700 hover:text-blue-600"
-                    >
+                      className="block py-2 text-gray-700 hover:text-blue-600">
                       {link.label}
                     </NavLink>
                   </li>
